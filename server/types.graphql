@@ -1,0 +1,22 @@
+type User @model {
+  id: ID! @isUnique
+  name: String
+  dateOfBirth: DateTime
+  posts: [Post!]! @relation(name: "UserPosts")
+  comments: [Comment!]! @relation(name: "UserComments")
+}
+
+type Post @model {
+  id: ID! @isUnique
+  title: String!
+  content: String!
+  comments: [Comment!]! @relation(name: "PostComments")
+  author: User! @relation(name: "UserPosts")
+}
+
+type Comment @model {
+  id: ID! @isUnique
+  content: String!
+  author: User! @relation(name: "UserComments")
+  post: Post! @relation(name: "PostComments")
+}

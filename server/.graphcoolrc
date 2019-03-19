@@ -1,0 +1,3 @@
+targets:
+  dev: local/cjtg91m0z00040179i6ebqja9
+  default: dev
