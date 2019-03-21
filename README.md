@@ -17,6 +17,6 @@ example.
 5. Open the **Simple API** link given on the browser.
 6. Add Users, Posts, and Comments. You can figure it out. I believe in you.
 
-## TODO
+## Roadmap
 
-1. Cache the model. Seriously.
+- [ ] Cache the model. Seriously.
